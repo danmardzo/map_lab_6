@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:theme="@style/AppTheme"
+    tools:context=".LoginActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lab 6"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="34dp"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please log in to continue"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_marginTop="30dp"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:hint="Username"
+                android:inputType="text"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_marginTop="20dp"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textAlignment="center"/>
+
+            <Button
+                android:id="@+id/login"
+                android:layout_marginTop="20dp"
+                android:background="@color/light_blue_900"
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/login" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>
